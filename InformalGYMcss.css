@@ -1,0 +1,929 @@
+@media screen and(max-width: 480px) {
+
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: auto;
+    background-image: url(https://www.everlastgyms.com/static/Background_4-b588f49a4e58d0366a09ffe9f07d95eb.webp);
+    background-size: 50rem;
+    background-repeat: repeat;
+    
+}
+
+header img{
+    width: 4%;
+    padding-left: 40px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 0.50px;
+    margin-right: 24px;
+    text-decoration: none;
+    padding-left: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav ul li:last-of-type a{
+    margin-right: 0;
+     
+}
+
+form{
+    padding-left: 55px;
+}
+
+.form-wrapper #search {
+  border: 1px solid #CCC;
+  box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  border-radius: 3px;
+  color: #999;
+  float: left;
+  font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+  height: 20px;
+  padding: 10px;
+  width: 320px;
+}
+
+.form-wrapper #search:focus {
+  border-color: #aaa;
+  box-shadow: 0 1px 1px #bbb inset;
+  outline: 0;
+}
+
+.form-wrapper #search:-moz-placeholder,
+.form-wrapper #search:-ms-input-placeholder,
+.form-wrapper #search::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+}
+
+.form-wrapper #submit {
+  background-color: #0483a0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a8b4f), to(#1a8b4f));
+  border: 1px solid #00748f;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+  color: #fafafa;
+  cursor: pointer;
+  height: 42px;
+  float: right;
+  font: 15px Arial, Helvetica;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+  width: 100px;
+}
+
+.form-wrapper #submit:active {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  outline: 0;
+}
+
+.form-wrapper #submit::-moz-focus-inner {
+  border: 0;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+header a img{
+    width: 60px;
+    border-radius: 17px;
+    margin-left: 18px;
+}
+
+header a img:hover{
+  transition: all .5s;
+}
+
+li:hover {
+   transform: scale(1.15);
+}
+
+video source{
+  right: 0;
+  z-index: -1;
+  margin-top: -50px;
+}
+
+@media (min-aspect-ratio: 16/9){
+  video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  video{
+    width: auto;
+    height:  100%;
+  }
+}
+
+.aboutPage{
+  background-color: #d8e1e4;
+  padding-bottom: 0px;
+  margin-top: -8px;
+  background-image: url(https://www.everlastgyms.com/static/Background_3-c04ea38cfb4520e6bf2dbd0d53827092.webp);
+  background-size: 50rem;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.aboutPhoto{
+  position: absolute;
+  left: 520px;
+  top: 600px;
+}
+
+h2{
+  margin: 0;
+  padding-top: 60px;
+  margin-bottom: 50px;
+  font-size: 3em;
+  text-transform:uppercase;
+  position:relative;
+  text-align: center;
+  color:rgb(185, 173, 173);
+  cursor: pointer;
+}
+
+.aboutPage h2:before{
+  content:"About";
+  position:absolute;
+  padding-top: 60px;
+  color:#060606;
+  top: 0;
+  left: 0;
+  width :0%;
+  overflow: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+h2:hover:before{
+  width: 100%;
+}
+
+.aboutText h4{
+  padding-top: 190px;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 20%;
+  letter-spacing: 0.6px;
+  font-size: 1.25rem;
+}
+
+.aboutText{
+  padding-left: 100px;
+  padding-right: 600px;
+  padding-bottom: 400px;
+  background-image: #587074;
+
+}
+
+
+#sign{
+  margin-top: -125px;
+  color: #1a8b4f;
+  margin-left: -75px;
+  font-size: 180px;
+  position: absolute;
+}
+
+.aboutButton{
+  width: 170px;
+  margin-top: 30px;
+  align-items: center;
+  background-color: #1a8b4f;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  margin-left: 248px;
+  box-shadow: inset 0 0 0 0 #1a8b4f;
+  color: white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.aboutButton:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+
+section img{
+  height: 260px;
+}
+
+#firstImgAbout{
+  position: absolute;
+  margin-left: 405px;
+  margin-top: -430px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#secondImgAbout{
+  position: absolute;
+  margin-left: 530px;
+  margin-top: -129px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#thirdImgAbout{
+  position: absolute;
+  margin-left: 405px;
+  margin-top: 170px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#mottoInform{
+  position: absolute;
+  margin-top: 450px;
+  font-weight: bolder;
+  font-size: 55px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 10px;
+  color: white;
+}
+
+#mottoJoin{
+  position: absolute;
+  margin-top: 570px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  color: #1a8b4f;
+  border: 0;
+  
+}
+
+.divMotto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainingPage h2:before{
+  content:"Training";
+  position:absolute;
+  padding-top: 60px;
+  color: #1a8b4f;
+  top: 0;
+  left: 0;
+  width :0%;
+  overflow: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+h2:hover:before{
+  width: 100%;
+}
+
+.trainingPage{
+  background-color: #d8e1e4;
+  padding-bottom: 110px;
+  margin-top: -8px;
+  background-image: url(https://www.everlastgyms.com/static/Background_4-b588f49a4e58d0366a09ffe9f07d95eb.webp);
+  background-size: 50rem;
+  background-repeat: repeat;
+}
+
+.trainingText{
+  display: flex;
+  justify-content: center;
+}
+
+.trainingPage h2{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.trainingText h4{
+  color: white;
+  display: flex;
+  align-self: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  font-size: 1.25rem;
+  margin-top: 150px;
+}
+
+.trainingPage img{
+  width: 430px;
+  height: 470px;
+  border-radius: 20px;
+}
+
+.trainingImgs{
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.trainingInfoGuide{
+  display: flex;
+  justify-content: center;
+  gap: 342px;
+  margin-top: -110px;
+}
+
+.trainingInfoGuide button{
+  height: 50px;
+  width: 118px;
+  font-size: 18px;
+  font-weight: bolder;
+  display: block;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  border-width: 0;
+  background-color: #1a8b4f;
+  color: white;
+}
+
+#discount{
+  position: absolute;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-width: 10px;
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: -390px;
+  color: white;
+  background-color: #1a8b4f;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+#buttonInfo {
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+}
+
+#buttonInfo:hover {background-color: #54b3d6}
+
+#buttonInfo:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+.pricesPage{
+  background-color: #d8e1e4;
+  background-image: url(https://www.everlastgyms.com/static/Background_3-c04ea38cfb4520e6bf2dbd0d53827092.webp);
+  background-size: 50rem;
+  background-repeat: repeat;
+  padding-bottom: 300px;
+}
+
+.pricesPage h2:before{
+  content:"PRICES";
+  position:absolute;
+  padding-top: 60px;
+  color:#060606;
+  top: 0;
+  left: 0;
+  width :0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+h2:hover:before{
+  width: 100%;
+}
+
+.pricesContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 50px;
+  
+}
+
+.pricesContainer div{
+  margin-top: 0;
+  border: solid 1px white;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 22px 0px rgb(0 0 0 / 16%);
+  font-size: 2.5rem;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  margin-top: 80px;
+  z-index: 1;
+  background-image: url(https://www.everlastgyms.com/static/Background_4-b588f49a4e58d0366a09ffe9f07d95eb.webp);
+  border-width: 3px;
+  width: 400px;
+  padding-top: 25px;
+  transition: transform .1s;
+  cursor: pointer;
+}
+
+.pricesContainer div:hover {
+  transform: scale(1.03);
+}
+
+section .pricesLine{
+  position: relative;
+  background-color:#1a8b4f;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 30px 30px 0px 0px;
+  height: 170px;
+  margin-top: -160px;
+  border-color: black;
+  border-width: 3;
+  border: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 20px 20px 20px;
+}
+
+.pricesContainer div{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: bolder;
+  
+}
+
+.pricesContainer div span{
+  display: flex;
+  justify-content: center;
+  margin-top: -130px;
+}
+
+.gymPricesSilver{
+  color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.gymPricesGold{
+  color: #FFD700;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+
+}
+
+.gymPricesPlatinum{
+  color: #1a8b4f;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+
+}
+
+hr{
+  display: flex;
+  flex-direction: column;
+  color: #00748f;
+  width: 300px;
+}
+
+.gymPricesGold hr{
+  border-color: #FFD700;
+}
+
+.gymPricesPlatinum hr{
+  border-color: #1a8b4f;
+}
+
+#silver{
+  border-top: 2px solid #D3D3D3;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+#gold{
+  border-top: 2px solid #FFD700;
+  border-bottom: 2px solid #FFD700;
+}
+
+#platinum{
+  border-top: 2px solid #1a8b4f;
+  border-bottom: 2px solid #1a8b4f;
+
+}
+
+.gymPricesSilver p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 15px;
+  letter-spacing: 1.3px;
+  height: 1px;
+}
+
+.gymPricesGold p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 15px;
+  letter-spacing: 1.3px;
+  height: 1px;
+}
+
+.gymPricesPlatinum p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 15px;
+  letter-spacing: 1.3px;
+  height: 1px;
+}
+
+#pricesList{
+  position: absolute;
+  margin-top: 460px;
+  display: flex;
+  align-self: center;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px
+}
+
+#pricesListSilver{
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 125px;
+  font-size: 24px;
+  display: flex;
+  align-self: center;
+  letter-spacing: 2px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+#pricesListSilverNew{
+  position: absolute;
+  margin-top: 460px;
+  display: flex;
+  align-self: center;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px
+}
+
+.pricesContainer .gymPricesGold{
+  border-color: #FFD700;
+}
+
+.pricesContainer .gymPricesPlatinum{
+  border-color: #1a8b4f;
+}
+
+.proteins{
+  height: 600px;
+  margin-top: 150px;
+
+}
+
+.firstLineProteins{
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondLineProteins{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+
+.firstLinePrices{
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstLinePrices span{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.firstLineProteins div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstLineProteins span{
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  margin-top: 7px;
+}
+
+.secondLineProteins span{
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  margin-top: 7px;
+}
+
+.secondLineProteins div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buyIt{
+  display: flex;
+  flex-direction: row;
+}
+
+#productInfo{
+  font-size: 13px;
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  font-weight: bold;
+  letter-spacing: 1.05px;
+}
+
+article button{
+  margin-top: 7px;
+  margin-left: 8px;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  background-color: #1a8b4f;
+  border: 0;
+  border-radius: 80px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  touch-action: manipulation;
+  box-shadow: inset 0 0 0 0 #1a8b4f;
+  color: white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+
+}
+
+article button:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+
+}
+
+#imgOutOfStock{
+  opacity: 0.4;
+}
+
+article p{
+  position: absolute;
+  margin-top: 130px;
+  font-weight: bolder;
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  font-size: 24px;
+}
+
+.proteins img{
+  transition: transform .1s;
+  cursor: pointer;
+
+}
+
+.proteins img:hover {
+  transform: scale(1.03);
+}
+
+.locationContent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationPage{
+  background-color: #d8e1e4;
+  height: 1100px;
+  margin-top: -8px;
+  background-image: url(https://www.everlastgyms.com/static/Background_4-b588f49a4e58d0366a09ffe9f07d95eb.webp);
+  background-size: 50rem;
+  background-repeat: repeat;
+}
+
+.locationPage h2:before{
+  content:"Location";
+  position:absolute;
+  padding-top: 60px;
+  color: #1a8b4f;
+  top: 0;
+  left: 0;
+  width :0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.locationPage h2{
+  color: rgb(255, 255, 255);
+
+}
+
+h2:hover:before{
+  width: 100%;
+}
+
+.locationPhoto{
+  flex-direction: column;
+  margin-top: 100px;
+  width: 350px;
+  display: flex;
+  gap: 20px;
+}
+
+#locationFirstPhoto{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 30px;
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#locationSecondPhoto{
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 360px;
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#locationThirdPhoto{
+  position: absolute;
+  margin-top: 460px;
+  margin-left: 90px;
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.map{
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+.mapouter{
+  width: 600px;
+  height: 800px;
+}
+
+.gmap_canvas{
+  width: 100%;
+  height: 800px;
+}
+
+.gmap_iframe{
+  height: 800px;
+  width: 100%;
+}
+
+footer{
+  background: url(https://a.storyblok.com/f/132963/2880x512/172b7a682f/home_inyourcorner.png);
+  background-size: cover;
+  height: 250px;
+}
+
+#footerImgLogo{
+  width: 60px;
+}
+
+#copyRight{
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.footerInfo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer img{
+  margin-top: 45px;
+}
+
+#copyRightRegister{
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: -5px;
+  letter-spacing: 1.05px;
+}
+
+.aboutTermsAndConditions{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #1a8b4f;
+  margin-top: 15px;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #1a8b4f;
+  font-size: 15px;
+
+}
+
+footer a{
+  cursor: pointer;
+}
+
+footer a:not(href){
+  color: #1a8b4f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #54b3d6;
+  transition: 0.2s;
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more-information{
+  transition: opacity 1s;
+  display: block;
+}
+
+.none{
+  display: none;
+}
