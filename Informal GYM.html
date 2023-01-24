@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="InformalGYMcss.css">
 </head>
 <body>
+    <div class="shopContainer none" id="shopContainer">
+
+    </div>
     <header>
         <img id="mainPhotoLogo"src="https://greengymgroup.com/wp-content/uploads/2019/12/logo1.png">
         <nav>
@@ -65,25 +68,43 @@
             <img id="secondImgTraining" src="https://img2.storyblok.com/1200x1061/smart/filters:quality(70):format(webp)/f/132963/1440x1273/ed58841bac/home_groupex.jpg">
             <img id="thirdImgTraining" src="https://img.freepik.com/premium-photo/male-boxer-boxing-punching-bag_209729-756.jpg"></div>
         <div class="trainingInfoGuide">
-            <button id="buttonInfo">GYM</button>
-            <button id="buttonInfo">CLASSES</button>
-            <button id="buttonInfo">BOX</button>
+            <button id="buttonInfoGym">GYM</button>
+            <div id="gymModal">
+                <div id="gymModal-content">
+                    <span id="modalCloseGym">&times;</span>
+                    <p>Matthew Colin - (541) 754-3010</p>
+                </div>
+            </div>
+            <button id="buttonInfoClasses">CLASSES</button>
+            <div id="classesModal">
+                <div id="classesModal-content">
+                    <span id="modalCloseClasses">&times;</span>
+                    <p>Anya Tate - (541) 256-9113</p>
+                </div>
+            </div>
+            <button id="buttonInfoBox">BOX</button>
+            <div id="boxModal" class="boxModalClass">
+                <div id="boxModal-content">
+                    <span id="modalCloseBox">&times;</span>
+                    <p>Alex Zsronk - (541) 476-1156</p>
+                </div>
+            </div>
         </div>
         <div id="discount">30% OFF</div>
     </section>
     <section class="pricesPage" id="pricesId">
         <h2>Prices</h2>
         <div class ="pricesContainer">
-            <div class="gymPricesSilver"><span>SILVER</span><hr></hr>
+            <div class="gymPricesSilver js-buy" data-title="Silver" data-price="70$"><span>SILVER</span><hr></hr>
                 <p>GYM acces only</p>
                 <p>Monday-Saturday : 06:00-23:00</p>
                 <p>Sauna acces allowed</p>
                 <p>No personal trainer</p>
                 <p>10% OFF for our supliments</p>
                 <span id="pricesListSilver">99 $</span>
-                <span id="pricesListSilverNew">70$</span>
+                <span id="pricesListSilverNew">70 $</span>
             </div>
-            <div class="gymPricesGold"><span>GOLD</span><hr></hr>
+            <div class="gymPricesGold js-buy" data-title="Gold" data-price="199$"><span>GOLD</span><hr></hr>
                 <p>GYM, Classes and Box acces</p>
                 <p>Monday-Saturday : 06:00-23:00</p>
                 <p>Sauna acces allowed</p>
@@ -91,7 +112,7 @@
                 <p>20% OFF for our supliments</p>
                 <span id="pricesList">199 $</span>
             </div>
-            <div class="gymPricesPlatinum"><span>PLATINUM</span><hr></hr>
+            <div class="gymPricesPlatinum js-buy" data-title="Platinum" data-price="299$"><span>PLATINUM</span><hr></hr>
                 <p>GYM, Classes and Box acces</p>
                 <p>Monday-Saturday : NON-STOP</p>
                 <p>Sauna acces allowed</p>
@@ -109,7 +130,7 @@
                     <span id="productInfo">2.5 kg / Chocolate Flavor</span>
                     <div id="buyIt">
                         <span>75$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Impact Whey Protein" data-price="75$">BUY</button>
                     </div>
                 </div>
                 <div>
@@ -118,7 +139,7 @@
                     <span id="productInfo">2 kg / Peanut Butter Flavor</span>
                     <div id="buyIt">
                         <span>59$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Vegan Protein" data-price="59$">BUY</button>
                     </div>
                 </div>
                 <div>
@@ -127,7 +148,7 @@
                     <span id="productInfo">5 kg / Orange Flavor</span>
                     <div id="buyIt">
                         <span>135$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Soy Protein Isolate" data-price="135$">BUY</button>
                     </div>
                 </div>
                 <div>
@@ -136,7 +157,7 @@
                     <span id="productInfo">2.5 kg / No Flavor</span>
                     <div id="buyIt">
                         <span>89$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Diet Protein" data-price="89$">BUY</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +168,7 @@
                         <span id="productInfo">120 Pills</span>
                     <div id="buyIt">
                         <span>90$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Multivitamin" data-price="90$">BUY</button>
                     </div>
                     </div>
                     <div>
@@ -156,7 +177,7 @@
                         <span id="productInfo">150 Pills</span>
                     <div id="buyIt">
                         <span>70$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="Vitamin D3" data-price="70$">BUY</button>
                     </div>
                     </div>
                     <div>
@@ -165,7 +186,7 @@
                         <span id="productInfo">100 Pills</span>
                     <div id="buyIt">
                         <span>100$</span>
-                        <button>BUY</button>
+                        <button class="js-buy" data-title="The Joint" data-price="100$">BUY</button>
                     </div>
                     </div>
                     <div>

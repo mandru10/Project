@@ -425,16 +425,16 @@ h2:hover:before{
   border-radius: 15px;
 }
 
-#buttonInfo {
+.trainingInfoGuide > button {
   cursor: pointer;
   outline: none;
   color: #fff;
   border: none;
 }
 
-#buttonInfo:hover {background-color: #54b3d6}
+.trainingInfoGuide > button:hover {background-color: #54b3d6}
 
-#buttonInfo:active {
+.trainingInfoGuide > button:active {
   background-color: #3e8e41;
   transform: translateY(4px);
 }
@@ -926,4 +926,207 @@ footer a:hover {
 
 .none{
   display: none;
+}
+
+#gymModal{
+  display: none;
+  position: absolute;
+  margin-top: -30%;
+  margin-left: -60.5%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+}
+
+#classesModal{
+  display: none;
+  position: absolute;
+  margin-top: -30%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#boxModal{
+  display: none;
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 60.5%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#gymModal-content, #classesModal-content, #boxModal-content{
+  background-color:#1a8b4f;
+  margin: 20% auto;
+  padding: 20px;
+  width: 20%;
+  opacity: 0.9;
+  border-radius: 3px;
+  box-shadow: 0 5px 8px 0 rgb(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0.17);
+}
+
+#modalCloseGym, #modalCloseClasses, #modalCloseBox{
+  color: #CCC;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -19px;
+  margin-right: -12px;
+  font-size: 30px;
+}
+
+#modalCloseGym:hover, #modalCloseGym:focus{
+  color: #060606;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalCloseClasses:hover, #modalCloseClasses:focus{
+  color: #060606;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalCloseBox:hover, #modalCloseBox:focus{
+  color: #060606;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trainingPage p{
+  font-weight: bolder;
+  font-size: larger;
+  display: flex;
+  margin-top: 5px;
+  color: white;
+  font-style: italic;
+  justify-content: center;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.shopContainer{
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  z-index: 5;
+  padding: 20px;
+  border-radius: 35px;
+  background-color: #158ea9d7;
+}
+
+.item-cart{
+  padding-bottom: 12px;
+
+}
+
+.item-cart:focus{
+  outline: none;
+}
+
+.js-delete-item{
+  background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  touch-action: manipulation;
+  box-shadow: inset 0 0 0 0 #1a8b4f;
+  color: white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  
+}
+
+.js-delete-item:hover{
+  cursor: pointer;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: red;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#button-order{
+  width: 85px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 10px;
+  background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  touch-action: manipulation;
+  box-shadow: inset 0 0 0 0 #1a8b4f;
+  color: white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#button-order:hover{
+  cursor: pointer;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+  
+}
+
+.credentials{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.order-container{
+  font-size: small;
+  font-weight: bolder;
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+input:invalid{
+    border-color: red;
+    border-radius: 3px;
+}
+
+#orderPlaceholderName{
+  font-family: Biotif,"Noto Sans","Noto Sans JP","Noto Sans KR",Helvetica;
+  font-weight: bolder;
+  line-height: 1.6;
+}
+
+#message{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+#orderName{
+  display: flex;
+  justify-content: center;
 }
