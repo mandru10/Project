@@ -1,10 +1,12 @@
-//Search bar
+// ~ Search bar 
 
 const searchForm = document.getElementById("searchForm");
-let allReplacedElements = [];
+let allReplacedElements = []; 
 
 searchForm.onsubmit = (e) => {
     e.preventDefault();
+
+// Replaced old searched elements with the default ones 
 
     allReplacedElements.forEach(item => {
         item.elementJs.innerHTML = item.elementHTML
@@ -18,6 +20,8 @@ searchForm.onsubmit = (e) => {
     let firstFoundElement = null;
     let indexFoundElement = 0;
     
+//Empty tag search 
+
     document.querySelectorAll('*:not(:has(*))').forEach((element) => {
         const elementInnerHtml = element.innerHTML;
         const isSearchValue = elementInnerHtml.toLowerCase().search(searchValueLowerCase);
@@ -28,6 +32,8 @@ searchForm.onsubmit = (e) => {
                 indexFoundElement = 1;
             }
 
+// Regex for searching and mark strings 
+    
             const searchRegex = new RegExp(searchValue, 'gi');
             const replacedInnerHtml = elementInnerHtml.replace(searchRegex, (match) => `<mark>${match}</mark>`);
 
@@ -40,10 +46,12 @@ searchForm.onsubmit = (e) => {
         }
     })
 
+// Automat scroll to the first found element in the page
+
     firstFoundElement && firstFoundElement.scrollIntoView({behavior:'smooth'})
 }
 
-//More information button
+// ~ More information button
 
 const moreInformationButton = document.getElementById("aboutButtonExtend");
 
@@ -60,7 +68,7 @@ moreInformationButton.onclick = (e) => {
     }
 }
 
-//Training buttons 
+// ~ Training buttons 
 
 const gymModal = document.getElementById("gymModal");
 const buttonGym = document.getElementById("buttonInfoGym");
@@ -105,24 +113,31 @@ function closeModalBox(){
     boxModal.style.display = "none";
 }
 
-//Order and buy buttons
+// ~ Order and buy buttons
 
 let cart = [];
 const buyButtons = document.getElementsByClassName('js-buy');
-
+ 
 
 Array.from(buyButtons).forEach(buyButton => {
     buyButton.addEventListener('click', (e) => {
         e.preventDefault();
+
+// Add the objects in cart 
 
         const button = e.currentTarget;
         const item = {
             title: button.dataset.title,
             price: button.dataset.price
         }
-        const abonaments = ['silver', 'gold', 'platinum'];
+
+// Checking to not have a duplicate abonament in the cart        
+
+        const abonaments = ['Silver', 'Gold', 'Platinum'];
         const alreadyExist = cart.some(element => element.title === item.title && abonaments.includes(item.title));
-        
+
+// Verifying the condition from line 134
+
         if(!alreadyExist){
             cart.push(item)
             renderCart();
@@ -130,9 +145,13 @@ Array.from(buyButtons).forEach(buyButton => {
     })  
 })
 
+//Create all the elements in format HTML 
+
 function renderCart(){
     const shopContainer = document.getElementById("shopContainer");
-    
+ 
+// If nothing in cart, the modal will close    
+
     if(cart.length === 0){
         shopContainer.classList.add("none");
         return
@@ -166,6 +185,8 @@ sendOrder.addEventListener('click', (eventSend) => {
 
 })
 
+// Remove items from order
+
     Array.from(removeButtons).forEach(removeButton => {
         removeButton.addEventListener("click", (e) =>{
             e.preventDefault();
@@ -177,6 +198,8 @@ sendOrder.addEventListener('click', (eventSend) => {
         })
     })
 }
+
+// Remove item from an array and return the remaining array
 
 function removeElementAt(arr, index) {
    let frontPart = arr.slice(0, index);
