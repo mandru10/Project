@@ -37,7 +37,7 @@ header nav ul li{
 
 header nav ul li a{
     color: white;
-    font-size: 30px;
+    font-size: 23px;
     letter-spacing: 0.50px;
     margin-right: 24px;
     text-decoration: none;
@@ -378,7 +378,7 @@ h2:hover:before{
 .trainingPage img{
   width: 430px;
   height: 470px;
-  border-radius: 20px;
+  border-radius: 9px;
 }
 
 .trainingImgs{
@@ -422,7 +422,7 @@ h2:hover:before{
   padding-right: 13px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 15px;
+  border-radius: 7px;
 }
 
 .trainingInfoGuide > button {
@@ -468,6 +468,18 @@ h2:hover:before{
   flex-direction: row;
   gap: 50px;
   
+}
+
+#buttonInfoGym{
+  border-radius: 4px;
+}
+
+#buttonInfoClasses{
+  border-radius: 4px;
+}
+
+#buttonInfoBox{
+  border-radius: 4px;
 }
 
 .pricesContainer div{
